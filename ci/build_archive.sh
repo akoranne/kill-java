@@ -1,12 +1,14 @@
 #!/bin/bash
 
+set -e
+
 echo ""
 echo " .. Running build"
 
 cd service-repo
 
 # maven build
-./mvnw clean package
+./mvnw -f  clean package
 
 # create target folder
 # mkdir -f ../build-output
