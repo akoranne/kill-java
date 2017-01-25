@@ -7,7 +7,7 @@ echo " .. Running build"
 mvn clean build
 
 # create target folder
-mkdir -f ../build-output
+# mkdir -f ../build-output
 
 # move all manifests file to target
 cp manifest.yml  ../build-output/
