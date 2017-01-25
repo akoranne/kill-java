@@ -4,7 +4,7 @@ echo ""
 echo " .. Running build"
 
 # maven build
-mvn clean build
+./mvnw clean package
 
 # create target folder
 # mkdir -f ../build-output
@@ -12,5 +12,5 @@ mvn clean build
 # move all manifests file to target
 cp manifest.yml  ../build-output/
 
-cp build/libs/*.jar ../build-output/
+cp target/*.jar ../build-output/
 
