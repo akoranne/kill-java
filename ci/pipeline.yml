@@ -10,7 +10,7 @@ resources:
   type: git
   source:
     uri: https://github.com/akoranne/kill-java.git
-    branch: develop
+    branch: master
 - name: deploy-dev-env
   type: cf
   source:
