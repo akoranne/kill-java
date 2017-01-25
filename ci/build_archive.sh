@@ -7,8 +7,9 @@ echo " .. Running build"
 
 cd service-repo
 
-# maven build
-./mvnw -f  clean package
+# gradle build
+export GRADLE_OPTS="-Dorg.gradle.native=false"
+./gradlew clean build
 
 # create target folder
 # mkdir -f ../build-output
@@ -16,5 +17,4 @@ cd service-repo
 # move all manifests file to target
 cp manifest.yml  ../build-output/
 
-cp target/*.jar ../build-output/
-
+cp build/libs/*.jar ../build-output/
