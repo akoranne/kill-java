@@ -3,6 +3,8 @@
 echo ""
 echo " .. Running build"
 
+cd service-repo
+
 # maven build
 ./mvnw clean package
 
