@@ -3,4 +3,4 @@ applications:
 - name: kill-java
   memory: 1G
   instances: 1
-  path: target/demo-0.0.1-SNAPSHOT.jar
+  path: build/libs/kill-java-0.1.0-SNAPSHOT.jar
